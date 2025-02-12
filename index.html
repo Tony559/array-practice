@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Practice</title>
+</head>
+<body>
+
+    <script>
+        //Arrays are a way of organizing and storing data, it is a foundational concept of programming
+        //In real life, we make lists to organize things
+        //1. Keep a journal, 2. Take a falconry class, 3. Learn Kubernetes
+
+        //In JavaScript, it would look something like this
+
+
+    
+
+        //Arrays are JavaScript's way of making lists. 
+        //Arrays can store any data types (strings, numbers, booleans)
+        //Like lists, arrays are ordered, meaning each item has a numbered position
+        //Arrays start with 0
+
+        //We can create an array by using an array literal
+        //An array literal creates the array by wrapping the items in square brackets []
+
+        //Arrays can store any data type, and can hold different types, but they are easier to work with when it is one type of info
+
+        //Every item in an array is an element in that array
+
+        //Each element is separated by a comma
+
+        const hobbies = ['schroeder is a lil guy', 'aidan is a lil guy', 'tony is a lil guy'];
+        //to access an element in this array, we type in hobbies[(number 0-2)]
+        let listItem = hobbies[0]
+        console.log(`listItem 0 is ${listItem[0]}`);
+        console.log(`listItem 3 is ${hobbies[2]}`);
+        console.log(`listItem 4 is ${hobbies[3]}`);
+
+        //once you have access to an element in an array you can change its values
+        //in order to change the value of an array, we need to change the value of that 
+        //index in our array 
+        let seasons = ['Winter', 'Spring', 'Summer', 'Fall'];
+        seasons[3] = 'Autumn';
+        console.log(seasons);
+
+
+
+        let newYearsResolutions = ['Keep a journal', 'take a falconry class', 'Learn Kubernetes']; 
+        for (let i = 0; i < newYearsResolutions.length; i++) {
+            newYearsResolutions[i] = prompt(`What is your ${i+1}stndrd New Years Resolution?`)
+        }
+        console.log(newYearsResolutions);
+    </script>
+    
+
+
+
+
+</body>
+</html>
