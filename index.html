@@ -31,27 +31,62 @@
 
         //Each element is separated by a comma
 
-        const hobbies = ['schroeder is a lil guy', 'aidan is a lil guy', 'tony is a lil guy'];
+        // const hobbies = ['schroeder is a lil guy', 'aidan is a lil guy', 'tony is a lil guy'];
         //to access an element in this array, we type in hobbies[(number 0-2)]
-        let listItem = hobbies[0]
-        console.log(`listItem 0 is ${listItem[0]}`);
-        console.log(`listItem 3 is ${hobbies[2]}`);
-        console.log(`listItem 4 is ${hobbies[3]}`);
+        // let listItem = hobbies[0]
+        // console.log(`listItem 0 is ${listItem[0]}`);
+        // console.log(`listItem 3 is ${hobbies[2]}`);
+        // console.log(`listItem 4 is ${hobbies[3]}`);
 
         //once you have access to an element in an array you can change its values
         //in order to change the value of an array, we need to change the value of that 
         //index in our array 
-        let seasons = ['Winter', 'Spring', 'Summer', 'Fall'];
-        seasons[3] = 'Autumn';
-        console.log(seasons);
 
 
 
-        let newYearsResolutions = ['Keep a journal', 'take a falconry class', 'Learn Kubernetes']; 
-        for (let i = 0; i < newYearsResolutions.length; i++) {
-            newYearsResolutions[i] = prompt(`What is your ${i+1}stndrd New Years Resolution?`)
-        }
-        console.log(newYearsResolutions);
+
+
+        // let seasons = ['Winter', 'Spring', 'Summer', 'Fall'];
+        // seasons[3] = 'Autumn';
+        // console.log(seasons);
+
+
+
+        // let newYearsResolutions = ['Keep a journal', 'take a falconry class', 'Learn Kubernetes']; 
+        // for (let i = 0; i < newYearsResolutions.length; i++) {
+        //     newYearsResolutions[i] = prompt(`What is your ${i+1}stndrd New Years Resolution?`)
+        // }
+        // console.log(newYearsResolutions);
+
+        //We can declare variables with both the let and const keywords, we prefer to use let
+        //Variables with let can be reassigned
+        //Variables declared with the const keyword cannot be redefined
+        //a const array may be beneficial because you cannot change it away from being an array, but you can change the content inside the array
+        let condiments = ['Ketchup', 'Mustard', 'Relish'];
+        // condiments = 'Mayo';
+        console.log(condiments);
+        const utensils = ['fork', 'spoon', 'knife'];
+        utensils[utensils.length-1] = 'Spork';
+        console.log(utensils);
+
+        // utensils = 'spork';
+        // console.log(utensils);
+        //an arrays built in property is length and it returns the number of items in the array
+        //We can access the length property on strings, not just arrays.
+        console.log(`condiments length is,`, condiments.length);
+
+        //in order to push an item to the end of an array, use the .push() method
+        //console.log(`condiments length is,`, condiments.length);
+        condiments.push('syrup');
+        console.log(`condiments is,`, condiments);
+
+        const chores = [];
+        chores.push('dishes', 'trash');
+        console.log(chores);
+
+        //Another array method, .pop, removes the last item of an array
+        const remove= chores.pop();
+        console.log(remove);
     </script>
     
 
